@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008390</color>
+    <color name="colorPrimaryDark">#008390</color>
+    <color name="colorAccent">#ffa200</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#888888</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="window_background">#F7F7F8</color>
+    <color name="darkGrey">#958E8E</color>
+    <color name="grey">#37000000</color>
+
+    <!-- Circle ProgressBar-->
+    <color name="ripple_color">#13aee7</color>
+
+    <!-- Summary-->
+    <color name="red">#f44236</color>
+    <color name="blue">#3e70c9</color>
+    <color name="pink">#F6CADB</color>
+    <color name="green">#43b968</color>
+    <color name="green_dark">#356042</color>
+    <color name="orange">#f59345</color>
+    <color name="yellow">@color/colorAccent</color>
+    <color name="ratingBarColor">#fdc928</color>
+    <color name="nav_header_background">#EBEBF1</color>
+
+    <color name="sky_blue">#0079BE</color>
+    <!-- App Theme Color-->
+    <color name="colorTheme">#ffa200</color>
+    <color name="background_grey">#eee</color>
+    <color name="instant_btn">#F79646</color>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/vFloat"
+    android:background="#008390"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="LaBa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/closeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="top|right"
+        android:scaleType="centerInside"/>
+
+</FrameLayout>

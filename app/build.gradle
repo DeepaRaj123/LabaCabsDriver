@@ -1,0 +1,228 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.31.2'
+    }
+}
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-android'
+
+repositories {
+    maven {url 'https://maven.fabric.io/public'}
+    google()
+    mavenCentral()
+}
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'labacabs_android_driver'
+            keyPassword 'labacabs_android_driver'
+            storeFile file('jks/labacabs_android_driver.jks')
+            storePassword 'labacabs_android_driver'
+        }
+    }
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.laba"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 33
+        versionName "1.1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        applicationIdSuffix '.partner'
+
+        resConfigs("en", "fi", "ar")
+
+        resValue "string", "app_name", "LaBa Driver"
+        resValue "string", "FACEBOOK_APP_ID", "251089096553597"
+        resValue "string", "ACCOUNT_KIT_CLIENT_TOKEN", "1029ef5ac8b465bef26ddbac3b4e5683"
+        resValue "string", "default_notification_channel_id", "fcm_default_channel"
+        resValue "string", "google_signin_server_client_id", "8405517512-n3a3qd216747nm66c68knslql9nu55hn.apps.googleusercontent.com"
+
+        //      Staging credentials
+        buildConfigField "String", "BASE_TITLE", '"LABA Driver"'
+       buildConfigField "String", "BASE_URL", '"https://labacabs.com/"'
+//        buildConfigField "String", "BASE_URL", '"http://18.216.181.213/"'
+//        buildConfigField "String", "BASE_URL", '"https://139.59.93.188/"'
+//        buildConfigField "String", "BASE_URL", '"https://connect-live-project.labacabs.com/"'
+ //         buildConfigField "String", "BASE_URL", '"https://dev-staging.labacabs.com/"'
+
+//        buildConfigField "String", "BASE_IMAGE_URL", '"https://labacabs.com/storage/"'
+//        buildConfigField "String", "BASE_IMAGE_URL", '"http://18.216.181.213/storage/app/public/"'
+//        buildConfigField "String", "BASE_IMAGE_URL", '"http://139.59.93.188/storage/app/public/"'
+ //     buildConfigField "String", "BASE_IMAGE_URL", '"https://connect-live-project.labacabs.com/storage/"'
+        buildConfigField "String", "BASE_IMAGE_URL", '"https://labacabs.com/storage/"'
+
+        buildConfigField "String", "TERMS_CONDITIONS", '"https://labacabs.com/privacy"'
+//        buildConfigField "String", "TERMS_CONDITIONS", '"http://18.216.181.213/privacy"'
+//        buildConfigField "String", "TERMS_CONDITIONS", '"http://139.59.93.188/privacy"'
+ //       buildConfigField "String", "TERMS_CONDITIONS", '"https://connect-live-project.labacabs.com/privacy"'
+
+//        buildConfigField "String", "HELP_URL", '"https://labacabs.com/"'
+//        buildConfigField "String", "HELP_URL", '"http://18.216.181.213/"'
+//        buildConfigField "String", "HELP_URL", '"http://139.59.93.188/"'
+        buildConfigField "String", "HELP_URL", '"https://labacabs.com/"'
+
+        buildConfigField "String", "CLIENT_SECRET", '"f96qJCcMIyTcsTkmnQNw3RtnQ0FT0YHNsIrjz45K"'
+
+        buildConfigField "String", "CLIENT_ID", '"2"'
+
+        buildConfigField "String", "DEVICE_TYPE", '"android"'
+
+        buildConfigField "String", "FCM_SERRVER_KEY", '"AAAAXnnl6xI:APA91bFRRknuERYLJrj2cDhUfmxLzOoyDYoNz_vkZfa20m9tv_WfwlwcRsY6RnvqkKwrKLEhigF9G3h2gwOn04jQL7xqz1OPWye13jMYjaBP-EDp_DHhH9WtUtNkakUujLXcNM38aggD"'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.applicationId}_V${variant.versionCode}_VN-${variant.versionName}_" + new Date().format('yyyy-MM-dd') + ".apk"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    /*      dimen       */
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    /*      multi dex       */
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //      Retrofit
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.16'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    //      butter knife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    /*      Glide       */
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+    /*      Maps        */
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.maps:google-maps-services:0.2.7'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    /*otp auto-read*/
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+
+    /*      circleImageView     */
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    /*      fire base       */
+
+//    implementation platform('com.google.firebase:firebase-bom:28.4.1')
+//    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.6'
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.0'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.github.imperiumlabs:GeoFirestore-Android:v1.5.0'
+
+    /*      toasty      */
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+
+    /*      easy image      */
+    implementation 'com.github.jkwiecien:EasyImage:2.0.4'
+
+    /*      easy permissions        */
+    implementation 'pub.devrel:easypermissions:1.2.0'
+
+    /*      facebook        */
+//    implementation 'com.facebook.android:facebook-login:4.38.1'
+    implementation 'com.facebook.android:facebook-login:latest.release'
+    implementation 'com.facebook.android:account-kit-sdk:4.37.0'
+
+    /*      event bus       */
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    /*      stetho      */
+//    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+    /*      direction library       */
+    implementation 'com.akexorcist:googledirectionlibrary:1.1.1'
+
+    /*      pin view        */
+    implementation 'com.chaos.view:pinview:1.3.2'
+
+    /*      lottie      */
+    implementation 'com.airbnb.android:lottie:2.5.4'
+
+    /*      fire base chat      */
+    implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+
+    //  For Image picker and Crop
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+
+    //      payment gateway...
+    implementation 'com.braintreepayments:card-form:5.0.0'
+    implementation 'com.braintreepayments.api:braintree:3.15.0'
+    //implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.stripe:stripe-android:8.7.0'
+
+    implementation 'id.zelory:compressor:2.1.0'
+//    Emoji Handle
+    implementation 'org.apache.commons:commons-lang3:3.4'
+
+    implementation 'me.philio:pinentryview:1.0.6'
+    implementation 'com.github.recruit-lifestyle:FloatingView:2.4.0'
+
+    //Razorpay payment gateway
+//    implementation 'com.razorpay:checkout:1.5.16'
+    implementation 'com.razorpay:checkout:1.6.12'
+
+    //implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

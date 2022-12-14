@@ -1,0 +1,340 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="title">ناقل</string>
+
+    <string name="copy_rights">TRANXIT Enterprise &#169; 2018</string>
+
+    <string name="amt_placeholder" translatable="false">دج XX.xx</string>
+    <string name="distance_placeholder" translatable="false">XX.xx كم</string>
+    <string name="time_placeholder" translatable="false">XX.xx دقيقة</string>
+    <string name="text_placeholder" translatable="false">XX xx XX xx</string>
+
+    <!--welcome-->
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">انشاء حساب جديد</string>
+    <string name="or_connect_with_social">الدخول عبر الوسائط الاجتماعية</string>
+
+    <string name="walk_1">مرحبا بك</string>
+    <string name="walk_2">كن سيد نفسك</string>
+    <string name="walk_3">حقق مداخيل اكبر</string>
+    <string name="walk_1_description">تطبيق ناقل للسائقين خدمة خاصة بسائقي الاجرة عبر مختلف ولايات الوطن  لنقل الركاب و المسافرين اونلاين</string>
+    <string name="walk_2_description">كن  سيد نفسك , اختر الوقت المناسب لك للعمل و كن أول من يتلقى طلبات الركاب او رتب مواعيد معهم مسبقا  وغيرها من الميزات عبر تطبيق ناقل للسائقين</string>
+    <string name="walk_3_description">ساعد اكبر عدد من المسافرين في الوصول الى وجهاتهم و حقق مكاسب شهرية اكثر من ذي قبل</string>
+    <string name="lorum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, non proident, sunt in culpa qui officia deserunt mollit anim id est laborum,non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="profile_updated_success">تم تحديث الملف الشخصي بنجاح</string>
+
+
+    <string name="welcome_back_sign_in_to_continue">مرحبا بعودتك , سجل الدخول للمواصلة</string>
+    <string name="what_your_email_address">ما هو الايميل الخاص بك</string>
+    <string name="enter_your_password">ادخل كلمة المرور</string>
+    <string name="enter_your_email">ادخل الايميل الخاص بك</string>
+    <string name="i_forgot_my_password">لقد نسيت كلمة المرور</string>
+    <string name="i_need_to_create_an_account">انشاء حساب جديد</string>
+    <string name="invalid_email">الرجاء ادخال الايميل الخاص بك</string>
+    <string name="invalid_password">الرجاء ادخال كلمة المرور</string>
+    <string name="name_exampple_com">name@example.com</string>
+
+
+    <string name="curr_pwd_val">الرجاء ادخال كلمة المرور الحالية</string>
+    <string name="confirm_pwd_val">الرجاء تأكيد كلمة المرور</string>
+
+
+    <string name="enter_the_details_you_used_to_register">قم بملء المعلولمات الخاصة بك للتسجيل</string>
+    <string name="email">الايميل</string>
+    <string name="name">الاسم و اللقب</string>
+    <string name="first_name">الاسم</string>
+    <string name="last_name">اللقب</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="country">البلد</string>
+    <string name="timezone">بتوقيت</string>
+    <string name="referral_code">ادخل كود الاحالة (اختياري )</string>
+
+
+    <string name="choose_an_account">اختر حساب للتسجيل</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+
+    <!--ForgotPassword Activity-->
+    <string name="enter_your_mail_id_for_recover">ادخل الايميل الخاص بك لاسترجاع الحساب</string>
+    <string name="enter_otp">ادخل كود التفعيل</string>
+    <string name="forgot_password_note_msg">ملاحظة: ادخل كود التفعيل الذي ارسل الى الايميل الخاص بك</string>
+    <string name="otp_validation">يجب ادخال كود التفعيل للمواصلة</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="name_example_com">name@example.com</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="note_please_enter_the_otp_send_tc_your_registered_email_address">ملاحظة: ادخل كود التفعيل الذي ارسل الى الايميل الخاص بك</string>
+
+
+    <string name="trip_type">نوع الرحلة</string>
+    <string name="business">اعمال</string>
+    <string name="personal">خاص</string>
+    <string name="rental">كراء سيارة</string>
+    <string name="vehicle_make">صانع السيارة</string>
+    <string name="vehicle_model">موديل السيارة</string>
+    <string name="vehicle_year">سنة السيارة</string>
+    <string name="vehicle_color">لون السيارة</string>
+    <string name="vehicle_license_plate">الرقم التسلسلي للسيارة</string>
+    <string name="city">المدينة</string>
+    <string name="car_category">صنف السيارة</string>
+    <string name="outstation">منطقة نائية</string>
+    <string name="shuttle">خدمة النقل</string>
+    <string name="round_trip">ذهاب و اياب</string>
+    <string name="one_way">ذهاب فقط</string>
+    <string name="i_have_read_and_agreed_the_n_terms_and_conditions">قرأت وقبلت الاحكام و الشروط</string>
+    <string name="title_activity_main">النشاط الاساسي</string>
+
+
+    <string name="payment">المدفوعات</string>
+    <string name="nav_card">البطاقة</string>
+    <string name="your_trips">رحلاتي</string>
+    <string name="coupon">كود الخصم الكوبون</string>
+    <string name="card_payment">بطاقة الدفع</string>
+    <string name="other_payment">وسائل دفع اخرى</string>
+    <string name="add_card_for_payments">اضافة بطاقة للدفع</string>
+    <string name="wallet">المحفظة</string>
+    <string name="passbook">وصل الدفع</string>
+    <string name="help">مساعدة</string>
+    <string name="share">نشر</string>
+    <string name="invite_referral">دعوة اصدقاء</string>
+    <string name="faq_support">الاسئلة الشائعة</string>
+    <string name="terms_and_conditions">الشروط و الاحكام</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="settings">اعدادات</string>
+
+    <string name="nav_header_desc">قائمة التصفح</string>
+    <string name="earnings">ارباحي</string>
+    <string name="summary">الموجز</string>
+    <string name="walletTransactions">الوثائق</string>
+
+
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="past">السابقة</string>
+    <string name="upcoming">القادمة</string>
+
+    <string name="upcoming_trip_details">معلومات الرحلة القادمة</string>
+    <string name="no_data_found">لا يوجد اي معلومات</string>
+    <string name="no_past_found">لا يوجد اي رحلات سابقة</string>
+    <string name="no_upcoming_found">لا يوجد اي رحلات قادمة</string>
+
+    <string name="booking_id">رقم الحجز</string>
+    <string name="booking_id_">رقم الحجز: %s</string>
+    <string name="favorites">المفضلة</string>
+    <string name="choose_language">اختر اللغة</string>
+    <string name="lost_my_item">لقد اضعت اغراضي</string>
+    <string name="incorrect_charge_dispute">الاستفسار عن تسعيرة خاطئة</string>
+    <string name="i_would_like_to_refund">اريد طلب تعويض</string>
+    <string name="submit">ارسال</string>
+    <string name="close">غلق</string>
+    <string name="write_your_comment">اكتب تعليق</string>
+    <string name="reason_for_canceling">سبب الغاء الرحلة</string>
+    <string name="ratings">التقييم</string>
+
+    <string name="cancel_ride">الغاء الرحلة</string>
+    <string name="call">اتصال</string>
+    <string name="pay_via">الدفع عبر</string>
+    <string name="comments">تعليقات</string>
+    <string name="cash">كاش</string>
+    <string name="view_receipt">رؤية الفاتورة</string>
+    <string name="payment_method">وسيلة الدفع</string>
+
+
+    <string name="invoice">الفاتورة</string>
+    <string name="pay_now">الدفع الان</string>
+    <string name="time_taken">الوقت المستغرق</string>
+    <string name="distance_travelled">المسافة المقطوعة</string>
+    <string name="base_fare">الثمن الاساسي</string>
+    <string name="distance_fare">أجرة المسافة</string>
+    <string name="tax">الضريبة</string>
+    <string name="tips">نصائح</string>
+    <string name="add_tips">اضف نصائح</string>
+    <string name="total">المجموع</string>
+    <string name="title_activity_help">نشاط المساعدة</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="service">خدمة</string>
+    <string name="save">حفظ</string>
+
+    <string name="today_completed_target">الاهداف المنجزة اليوم</string>
+    <!-- Earning-->
+    <string name="sample_earnings" translatable="false">0/0</string>
+    <string name="target_completed">هدف</string>
+    <string name="total_earnings">مجموع المداخيل</string>
+    <string name="time">الوقت</string>
+    <string name="distance">المسافة</string>
+    <string name="amount">المبلغ</string>
+    <string name="no_rides">لا توجد رحلات منجزة</string>
+
+    <!-- Summary-->
+    <string name="total_rides">مجموع الرحلات</string>
+    <string name="revenue">العائد</string>
+    <string name="schedule_rides">عدد الرحلات المبرمجة</string>
+    <string name="canceled_rides">الرحلات الملغية</string>
+    <string name="rides">الرحلات</string>
+    <string name="past_trip_detail">معلومات الرحلة السابقة</string>
+    <string name="upcoming_tripdetail">معلومات الرحلة القادمة</string>
+
+    <string name="support">فريق الدعم و المساعدة</string>
+    <string name="our_team_persons_will_contact_you_soon">فريقنا سيتصل بك  قريبا</string>
+    <string name="refer_your_friends_to_drive">ادع اصدقائك للعمل معنا </string>
+    <string name="give_the_free_ride_by_reffering_the_invite_code_worth_10vce">امنح رحلة مجانية عن طريق الرجوع إلى رمز الدعوة بقيمة٪ s</string>
+    <string name="share_your_invite_code">قم بنشر رابط الدعوة الخاص بك</string>
+    <string name="refferal_earning">ارباح المحالين</string>
+    <string name="total_members">مجموع الاعضاء</string>
+    <string name="invite_friends">دعوة اصدقاء</string>
+    <string name="invite_refferal">دعوة اشخاص</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="looking_to_change_password">تريد تغيير كلمة المرور</string>
+    <string name="go_offline">تشغيل وضع غير متصل</string>
+    <string name="go_online">تشغيل وضع متصل</string>
+    <string name="reject">رفض</string>
+    <string name="accept">قبول</string>
+    <string name="pick_up_location">موقع الانطلاق</string>
+    <string name="drop_location">موقع الوصول</string>
+
+    <!--Incoming Request-->
+    <string name="timer_start">1</string>
+    <string name="schedule">برمجة رحلة</string>
+    <string name="pick_up">موقع الانطلاق</string>
+    <string name="pick_up_invoice">صعود الراكب </string>
+    <string name="drop_at">موقع الوصول</string>
+
+    <!--Flow status -->
+    <string name="arrived">وصول السائق</string>
+    <string name="picked_up">صعود المسافر </string>
+    <string name="tap_when_dropped">انقر عند الوصول</string>
+    <string name="rate_your_trip">قيم رحلتك </string>
+
+    <string name="cancel">الغاء</string>
+
+
+    <string name="promotion_applied">تم تطبيق كود الخصم ( الكوبون ) </string>
+    <string name="wallet_detection">كشف المحفظة</string>
+    <string name="amount_to_be_paid">المبلغ الواجب تسديده</string>
+    <string name="write_your_reviews">اكتب تقييمك</string>
+    <string name="confirm_payment">تاكيد الدفع</string>
+    <string name="choose_city">اختر المدينة</string>
+
+
+    <string name="invalid_first_name">الرجاء ادخال الاسم</string>
+    <string name="invalid_last_name">الرجاء ادخال اللقب</string>
+    <string name="invalid_mobile">الرجاء ادخال رقم الهاتف</string>
+    <string name="validmobile">الرجاء ادخال رقم هاتف صحيح</string>
+    <string name="invalid_confirm_password">الرجاء تأكيد كلمة المرور</string>
+    <string name="password_should_be_same">كلمة المرور يجب ان تكون متطابقة</string>
+    <string name="invalid_password_length">كلمة المرور يجب ان تكون بين 6 - 15 حرف</string>
+
+    <string name="invalid_old_password">الرجاء ادخال كلمة المرور</string>
+    <string name="invalid_new_password">الرجاء ادخال كلمة مرور جديدة</string>
+    <string name="reason_for_cancelling">سبب الغاء الرحلة</string>
+    <string name="write_your_comments">اكتب تعليق</string>
+    <string name="no_comments">لا توجد تعليقات</string>
+
+    <string name="card">البطاقة</string>
+    <string name="by_cash">كاش</string>
+    <string name="wallet_payment">محفظة الدفع</string>
+    <string name="by_wallet">عبر المحفظة</string>
+    <string name="by_paypal">عبر البايبال</string>
+    <string name="paypal">بايبال</string>
+    <string name="sos">SOS نداء إستغاثة</string>
+
+    <string name="pass_updated">تم تغيير كلمة المرور بنجاح</string>
+    <string name="write_something">اكتب شيئا…</string>
+    <string name="chat">دردشة</string>
+
+
+    <string name="api_success">نجاح api...</string>
+    <string name="error">خطأ !</string>
+    <string name="please_accept_permission">الرجاء السماح بامكانية الوصول</string>
+    <string name="call_permission">يرجى إعطاء إذن الاتصال!</string>
+    <string name="drop_off_location">موقع الوصول</string>
+    <string name="log_out_title">هل تريد حقا تسجيل الخروج</string>
+    <string name="ok">موافق</string>
+    <string name="login_out_success">تم تسجيل الدخول بنجاح</string>
+    <string name="profile_updated">تم تحديث الملف الشخصي</string>
+    <string name="please_accept_terms_conditions">الرجاء قبول الشروط و الاحكام</string>
+    <string name="no_internet_connection">عذرا لست متصل بالانترنت</string>
+    <string name="register_success">تم التسجيل بنجاح</string>
+    <string name="please_correct_otp">الرجاء ادخال كود التحقق الصحيح</string>
+    <string name="password_updated">تم تحديث كلمة المرور بنجاح</string>
+    <string name="cancel_request_title">هل انت متاكد من الغاء هذا الطلب ؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="ride_accepted">تم قبول الرحلة</string>
+    <string name="ride_cancelled">تم الغاء الرحلة</string>
+    <string name="tab_when_dropped">انقر عند الوصول</string>
+    <string name="otp_verified">تم التاكد من كود التحقق</string>
+    <string name="otp_wrong">كود التحقق خاطئ</string>
+    <string name="english" translatable="false">الانجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="french">الفرنسية</string>
+    <string name="time_fare">اجرة الوقت</string>
+    <string name="your_wallet_amount_is">المبلغ الموجود في المحفظة هو</string>
+    <string name="transaction_id">رقم المعاملة</string>
+    <string name="date">التاريخ</string>
+    <string name="transaction">المعاملة</string>
+    <string name="enter_the_amount">ادخل المبلغ</string>
+    <string name="status">الحالة</string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="no_requested_history">لا يوجد سجل مطلوب</string>
+    <string name="no_wallet_history">لا يوجد سجل للمحفظة</string>
+    <string name="confirm_new_password">تاكيد كلمة المرور الجديدة</string>
+    <string name="otp">كود التحقق</string>
+    <string name="account_verification_desc">حسابك لم يتم تفعيله بعد الرجاء الانتظار ...</string>
+    <string name="banned_desc">حسابك معطل. الرجاء الاتصال بالادمن ...</string>
+    <string name="confirm_request_amt">قم بتأكيد مبلغ طلبك</string>
+    <string name="confirm">تاكيد</string>
+    <string name="delete">حذف</string>
+    <string name="change_card">نعم</string>
+    <string name="card_added">تمت اضافة البطاقة</string>
+    <string name="please_enter_card_number">الرجاء ادخال رقم البطاقة</string>
+    <string name="please_enter_card_cvv">الرجاء ادخال الرقم السري للبطاقة</string>
+    <string name="please_enter_card_expiration_details">الرجاء ادخال تاريخ انتهاء صلاحية البطاقة</string>
+    <string name="card_">XXXX-XXXX-XXXX-</string>
+    <string name="add_card_details">اضف معلومات بطاقة الدفع</string>
+    <string name="card_deleted_successfully">تم حذف البطاقة بنجاح</string>
+    <string name="are_sure_you_want_to_delete">هل انت متاكد من حذف البطاقة</string>
+    <string name="cant_able_to_delete_card">لا يمكن حذف البطاقة</string>
+    <string name="are_sure_you_want_to_change_default_card">هل انت متاكد من تغيير بطاقة الدفع الرئيسية؟</string>
+    <string name="are_sure_you_want_to_change_language">هل تريد تغيير اللغة؟</string>
+    <string name="proceed">متابعة</string>
+    <string name="Add">اضافة</string>
+    <string name="edit">تعديل</string>
+    <string name="no_document_available">لا توجد اي وثائق</string>
+    <string name="add_all_documents">الرجاء ادخال جميع الوثائق</string>
+    <string name="change_document">تغيير الوثيقة</string>
+    <string name="no_document_changed">قم بتغيير اي وثيقة و ارسل</string>
+    <string name="invalid_img_file">حدد ملف الصورة المناسب</string>
+    <string name="server_down">يتعذر الوصول الى السيرفر</string>
+    <string name="no_internet">الرجاء التحقق من اتصال الانترنت</string>
+    <string name="some_thing_wrong">حدث خطئ ما ...</string>
+    <string name="otp_verification">التحقق من كود التحقق</string>
+
+    <string name="please_wait">الرجاء الانتظار</string>
+    <string name="schedule_for">برمجة من اجل</string>
+    <string name="please_try_again">الرجاء حاول من جديد</string>
+    <string name="logout_successfully">تم تسجيل الدخول بنجاح</string>
+    <string name="fran_ais" translatable="false">الفرنسية</string>
+    <string name="expireSession">لقد اطلت الغياب , الرجاء تسجيل الدخول للمواصلة</string>
+    <string name="newVersionAvailable">نسخة جديدة متوفرة</string>
+    <string name="forceUpdateMsg">الرجاء تحديث التطبيق للمواصلة</string>
+    <string name="update">تحديث</string>
+    <string name="noThanks">لا شكرا</string>
+    <string name="what_your_phonenumber">ما هو رقم هاتفك</string>
+    <string name="invalid_otp">الرجاء ادخال كود التحقق</string>
+    <string name="wrong_otp">كود التحقق خاطئ</string>
+    <string name="finnish">انهاء</string>
+    <string name="ride_cancel_successfull">الرحلة الغيت بنجاح</string>
+    <string name="ride_complete_successfull">الرحلة تمت بنجاح</string>
+    <string name="payable">Payable</string>
+</resources>
+
+

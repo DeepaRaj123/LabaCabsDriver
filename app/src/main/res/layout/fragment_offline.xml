@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/menu_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <!--android:text="@string/account_verification_desc"-->
+    <TextView
+        android:id="@+id/tvApprovalDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_img"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_20"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ic_offline" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.laba.partner.common.swipe_button.SwipeButton
+            android:id="@+id/swipeBtnEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            app:button_background="@drawable/shape_button"
+            app:button_bottom_padding="15dp"
+            app:button_image_disabled="@drawable/ic_pause_riding"
+            app:button_image_enabled="@drawable/ic_riding"
+            app:button_left_padding="15dp"
+            app:button_right_padding="15dp"
+            app:button_top_padding="15dp"
+            app:button_trail_enabled="false"
+            app:initial_state="disabled"
+            app:inner_text="@string/go_online"
+            app:inner_text_background="@drawable/shape_rounded"
+            app:inner_text_bottom_padding="18dp"
+            app:inner_text_color="@android:color/white"
+            app:inner_text_size="16sp"
+            app:inner_text_top_padding="18dp">
+
+        </com.laba.partner.common.swipe_button.SwipeButton>
+
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>-->
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvApprovalDesc"
+        android:layout_alignStart="@+id/tvApprovalDesc"
+        android:layout_alignEnd="@+id/tvApprovalDesc"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/button_round_primary"
+        android:text="@string/upload_files"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+    <!--<com.tranxitpro.provider.common.ShimmerTextView
+        android:visibility="gone"
+        android:id="@+id/go_online_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/button_round_primary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/go_online"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />-->
+
+</RelativeLayout>

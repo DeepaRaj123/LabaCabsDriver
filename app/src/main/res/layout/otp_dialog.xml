@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/activity_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/otp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/enter_otp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:cursorVisible="true"
+                android:hint="Hint."
+                android:inputType="textPersonName|number"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                app:cursorColor="@color/colorPrimaryText"
+                app:cursorWidth="2dp"
+                app:itemCount="4"
+                app:itemHeight="@dimen/_40sdp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="@dimen/_40sdp"
+                app:lineColor="@color/grey"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/button_round_accent"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/call"
+                android:textColor="#FFF" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/button_round_primary"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/chat"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/otp_btn_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/start_trip"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

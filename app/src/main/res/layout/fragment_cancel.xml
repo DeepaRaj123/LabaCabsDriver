@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_background"
+    android:elevation="@dimen/_4sdp"
+    android:padding="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/rate_with_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/sfui_semibold"
+                android:text="@string/reason_for_cancelling"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/_13ssp" />
+
+            <EditText
+                android:id="@+id/txtComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_border"
+                android:gravity="top|start"
+                android:hint="@string/write_your_comment"
+                android:inputType="textMultiLine|textAutoComplete"
+                android:lines="3"
+                android:maxLength="250"
+                android:maxLines="3"
+                android:padding="16dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/dismiss"
+                    style="@style/MyButton.Primary"
+                    android:layout_weight="1"
+                    android:text="@string/dismiss" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/MyButton.Accent"
+                    android:text="@string/submit" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

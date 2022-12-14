@@ -1,0 +1,336 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="title">Zippy</string>
+
+    <string name="copy_rights">Zippy &#169; 2019</string>
+
+    <string name="amt_placeholder" translatable="false">$ XX.xx</string>
+    <string name="distance_placeholder" translatable="false">XX.xx Km</string>
+    <string name="time_placeholder" translatable="false">XX.xx min</string>
+    <string name="text_placeholder" translatable="false">XX xx XX xx</string>
+
+    <!--welcome-->
+    <string name="sign_in">Kirjaudu</string>
+    <string name="sign_up">Rekisteröidy</string>
+    <string name="or_connect_with_social">Yhdistä toisella tapaa</string>
+
+    <string name="walk_1">Tervetuloa</string>
+    <string name="walk_2">Kuljeta</string>
+    <string name="walk_3">Palvele</string>
+    <string name="walk_1_description">Zippy Driver on sovellus kuljettalle.</string>
+    <string name="walk_2_description">Tarjoamme pääkaupinkiseudun laadukkaimman yksityiskuljetuksen.</string>
+    <string name="walk_3_description">Palvelemme asiakasta kaikissa mahdollisissa asioissa. Asiakastyytyväisyys on meidän tärkein tavoite.</string>
+    <string name="lorum"> Ylellistä kyytiä ja palvelua.</string>
+
+
+    <string name="welcome_back_sign_in_to_continue">Tervetuloa takaisin, kirjaudu jatkaaksesi</string>
+    <string name="what_your_email_address">Anna sähköpostiosoitteesi</string>
+    <string name="enter_your_password">Anna salasana</string>
+    <string name="enter_your_email">Kirjoita sähköpostiosoiteesi</string>
+    <string name="i_forgot_my_password">Unohdin salasanan</string>
+    <string name="i_need_to_create_an_account">Haluan luoda tilin</string>
+    <string name="invalid_email">Kirjoita sähköpostiosoite</string>
+    <string name="invalid_password">Kirjoita salasana</string>
+    <string name="name_exampple_com">name@example.com</string>
+
+
+    <string name="curr_pwd_val">Syötä nykyinen salasana.</string>
+    <string name="confirm_pwd_val">Syötä salasana toisen kerran.</string>
+
+
+    <string name="enter_the_details_you_used_to_register">Anna rekisteröintitietosi</string>
+    <string name="email">Sähköposti</string>
+    <string name="name">Nimi</string>
+    <string name="first_name">Etunimi</string>
+    <string name="last_name">Sukunimi</string>
+    <string name="phone_number">Puhelinnumero</string>
+    <string name="password">Salasana</string>
+    <string name="confirm_password">Toista salasana</string>
+    <string name="country">Maa</string>
+    <string name="timezone">Aikavyöhyke</string>
+    <string name="referral_code">Kampanjakoodi (Valinnainen)</string>
+
+
+    <string name="choose_an_account">Valitse tili</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+
+    <!--ForgotPassword Activity-->
+    <string name="enter_your_mail_id_for_recover">Anna sähköpostiosoite palautusta varten</string>
+    <string name="enter_otp">Syötä varmistuskoodi</string>
+    <string name="forgot_password_note_msg">Huomio: Ole hyvä ja syötä varmistuskoodi sähköpostistasi</string>
+    <string name="otp_validation">Varmistuskoodi pakollinen</string>
+    <string name="reset_password">Palauta salasana</string>
+    <string name="name_example_com">name@example.com</string>
+    <string name="new_password">Uusi salasana</string>
+    <string name="old_password">Vanha salasana</string>
+    <string name="note_please_enter_the_otp_send_tc_your_registered_email_address">Huomio: Ole hyvä ja syötä varmistuskoodi sähköpostistasi</string>
+
+
+    <string name="trip_type">Matkan tyyppi</string>
+    <string name="business">Työ</string>
+    <string name="personal">Henkilökohtainen</string>
+    <string name="rental">Vuokra</string>
+    <string name="vehicle_make">Merkki</string>
+    <string name="vehicle_model">Malli</string>
+    <string name="vehicle_year">Valmistusvuosi</string>
+    <string name="vehicle_color">Väri</string>
+    <string name="vehicle_license_plate">Rekisterinumero</string>
+    <string name="city">Kaupunki</string>
+    <string name="car_category">Kategoria</string>
+    <string name="outstation">Tolppapaikka</string>
+    <string name="shuttle">Lentokenttä</string>
+    <string name="round_trip">Kiertäväajo</string>
+    <string name="one_way">Yksityisajo</string>
+    <string name="i_have_read_and_agreed_the_n_terms_and_conditions">Olen lukenut ja ymmärtänyt käyttöehdot</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="payment">Maksu</string>
+    <string name="nav_card">Kortti</string>
+    <string name="your_trips">Matkani</string>
+    <string name="coupon">Kuponki</string>
+    <string name="card_payment">Korttimaksu</string>
+    <string name="other_payment">Muut maksut</string>
+    <string name="add_card_for_payments">Lisää maksukortti</string>
+    <string name="wallet">Lompakko</string>
+    <string name="passbook">Kirjanpito</string>
+    <string name="help">Tuki</string>
+    <string name="share">Jaa</string>
+    <string name="invite_referral">Kampanjakoodi</string>
+    <string name="faq_support">FAQ tuki</string>
+    <string name="terms_and_conditions">Käyttöehdot</string>
+    <string name="privacy_policy">Yksityisyyskäytäntö</string>
+    <string name="logout">Kirjaudu ulos</string>
+    <string name="settings">Asetukset</string>
+
+    <string name="nav_header_desc">Navigaatio</string>
+    <string name="earnings">Tulot</string>
+    <string name="summary">Yhteenveto</string>
+    <string name="walletTransactions">Rahaliikenne</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="past">Menneet</string>
+    <string name="upcoming">Tulevat</string>
+
+    <string name="upcoming_trip_details">Tulevien ajojen tiedot</string>
+    <string name="no_data_found">Tietoa ei löytynyt</string>
+    <string name="no_past_found">Ei menneitä ajoja</string>
+    <string name="no_upcoming_found">Ei tulevia ajoja</string>
+
+    <string name="booking_id">Varaus ID</string>
+    <string name="booking_id_">Varaus ID: %s</string>
+    <string name="favorites">Suosikit</string>
+    <string name="choose_language">Valitse kieli</string>
+    <string name="lost_my_item">Löytötavarat</string>
+    <string name="incorrect_charge_dispute">Väärä veloitus</string>
+    <string name="i_would_like_to_refund">Takaisinmaksu</string>
+    <string name="submit">Hyväksy</string>
+    <string name="close">Sulje</string>
+    <string name="write_your_comment">Kirjoita kommentti</string>
+    <string name="reason_for_canceling">Peruutuksen syy</string>
+    <string name="ratings">Arviot</string>
+
+    <string name="cancel_ride">Peruuta kyyti</string>
+    <string name="call">Soita</string>
+    <string name="pay_via">Maksa</string>
+    <string name="comments">Kommentti</string>
+    <string name="cash">Käteinen</string>
+    <string name="view_receipt">Näytä kuitti</string>
+    <string name="payment_method">Maksutapa</string>
+
+
+    <string name="invoice">Lasku</string>
+    <string name="pay_now">Maksa nyt</string>
+    <string name="time_taken">Kulunut aika</string>
+    <string name="distance_travelled">Kuljettu matka</string>
+    <string name="base_fare">Aloitusmaksu</string>
+    <string name="distance_fare">Matkataksa</string>
+    <string name="tax">Vero</string>
+    <string name="tips">Tippi</string>
+    <string name="add_tips">Lisää tippi</string>
+    <string name="total">Yhteensä</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="profile">Profiili</string>
+    <string name="service">Palvelut</string>
+    <string name="save">Tallenna</string>
+
+    <string name="today_completed_target">Päivän tavoite</string>
+    <!-- Earning-->
+    <string name="sample_earnings" translatable="false">0/0</string>
+    <string name="target_completed">Tavoite saavutettu</string>
+    <string name="total_earnings">Tulot yhteensä</string>
+    <string name="time">Aika</string>
+    <string name="distance">Ajettu matka</string>
+    <string name="amount">Summa</string>
+    <string name="no_rides">Ei ajoja.</string>
+
+    <!-- Summary-->
+    <string name="total_rides">KYYDIT YHTEENSÄ</string>
+    <string name="revenue">TULOT</string>
+    <string name="schedule_rides">AJETUT KYYDIT</string>
+    <string name="canceled_rides">PERUUTETUT KYYDIT</string>
+    <string name="rides">Kyydit</string>
+    <string name="past_trip_detail">Menneet matkat</string>
+    <string name="upcoming_tripdetail">Tulevat matkat</string>
+
+    <string name="support">Tuki</string>
+    <string name="our_team_persons_will_contact_you_soon">Otamme yhteyttä pian!</string>
+    <string name="refer_your_friends_to_drive">Kutsu ystäväsi ajamaan!</string>
+    <string name="give_the_free_ride_by_reffering_the_invite_code_worth_10vce">Tarjoa ilmainen kyyti kampajakoodilla arvolta %s</string>
+    <string name="share_your_invite_code">Jaa kampanjakoodi</string>
+    <string name="refferal_earning">Bonukset kutsuista</string>
+    <string name="total_members">Jäsenet yhteensä</string>
+    <string name="invite_friends">Kutsu ystäviä</string>
+    <string name="invite_refferal">Kutsu käyttäjä</string>
+    <string name="change_password">Vaihda salasana</string>
+    <string name="current_password">Nykyinen salasana</string>
+    <string name="looking_to_change_password">Salasanan vaihdon aika</string>
+    <string name="go_offline">SIIRRY OFFLINE</string>
+    <string name="go_online">SIIRRY ONLINE</string>
+    <string name="reject">Kieltäydy</string>
+    <string name="accept">Hyväksy</string>
+    <string name="pick_up_location">Noutosijainti</string>
+    <string name="drop_location">Määränpää</string>
+
+    <!--Incoming Request-->
+    <string name="timer_start">1</string>
+    <string name="schedule">Aikataulu</string>
+    <string name="pick_up">Noutosijainti </string>
+    <string name="pick_up_invoice">Nouto </string>
+    <string name="drop_at">Määränpää </string>
+
+    <!--Flow status -->
+    <string name="arrived">SAAPUNUT</string>
+    <string name="picked_up">NOUDETTU</string>
+    <string name="tap_when_dropped">KYYTI VALMIS</string>
+    <string name="rate_your_trip">Arvioi kyytisi </string>
+
+    <string name="cancel">PERUUTA</string>
+
+
+    <string name="promotion_applied">Koodi hyväksytty</string>
+    <string name="wallet_detection">Lompakon tunnistus</string>
+    <string name="amount_to_be_paid">Maksettava summa</string>
+    <string name="write_your_reviews">Kirjoita arvio</string>
+    <string name="confirm_payment">Varmista maksu</string>
+    <string name="choose_city">Valitse kaupunki</string>
+
+
+    <string name="invalid_first_name">Anna etunimesi</string>
+    <string name="invalid_last_name">Anna sukunimesi</string>
+    <string name="invalid_mobile">Anna mobiilinumerosi</string>
+    <string name="validmobile">Anna numero oikeassa muodossa</string>
+    <string name="invalid_confirm_password">Anna salasana uudestaan</string>
+    <string name="password_should_be_same">Salasanojen tulee täsmätä</string>
+    <string name="invalid_password_length">Salasanan tulee olla 6-15 merkkiä.</string>
+
+    <string name="invalid_old_password">Anna salasana</string>
+    <string name="invalid_new_password">Anna uusi salasana</string>
+    <string name="reason_for_cancelling">Syy peruutukseen</string>
+    <string name="write_your_comments">Kirjoita kommentti</string>
+    <string name="no_comments">Ei kommenttia</string>
+
+    <string name="card">Kortti</string>
+    <string name="by_cash">Käteinen</string>
+    <string name="wallet_payment">Lompakkomaksu</string>
+    <string name="by_wallet">Lompakko</string>
+    <string name="by_paypal">Paypal</string>
+    <string name="paypal">Paypal</string>
+    <string name="sos">SOS</string>
+
+    <string name="pass_updated">Salasana vaihdettu onnistuneesti!</string>
+    <string name="write_something">kirjoita jotain…</string>
+    <string name="chat">Chat</string>
+
+
+    <string name="api_success">API onnistui!</string>
+    <string name="error">Virhe!</string>
+    <string name="please_accept_permission">Hyväksy kaikki käyttöoikeudet!</string>
+    <string name="call_permission">Anna soitto-oikeus!</string>
+    <string name="drop_off_location">Määränpää</string>
+    <string name="log_out_title">Haluatko kirjautua ulos?</string>
+    <string name="ok">OK</string>
+    <string name="login_out_success">Kirjautuminen onnistui!</string>
+    <string name="profile_updated">Profiili päivitetty!</string>
+    <string name="please_accept_terms_conditions">Hyväksy käyttöehdot.</string>
+    <string name="no_internet_connection">Pahoittelut! Ei internet-yhteyttä.</string>
+    <string name="register_success">Rekisteröity onnistuneesti!</string>
+    <string name="please_correct_otp">Syötä oikea varmistuskoodi</string>
+    <string name="password_updated">Salasana päivitetty!</string>
+    <string name="cancel_request_title">Haluatko peruuttaa pyynnön?</string>
+    <string name="yes">KYLLÄ</string>
+    <string name="no">EI</string>
+    <string name="ride_accepted">Kyyti hyväksytty!</string>
+    <string name="ride_cancelled">Kyyti peruutettu!</string>
+    <string name="tab_when_dropped">KYYTI VALMIS</string>
+    <string name="otp_verified">Koodi hyväksytty!</string>
+    <string name="otp_wrong">Väärä koodi!</string>
+    <string name="english" translatable="false">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="time_fare">Aikataksa</string>
+    <string name="your_wallet_amount_is">Lompakon saldo on</string>
+    <string name="transaction_id">Siirto Id</string>
+    <string name="date">Pvm</string>
+    <string name="transaction">Siirto</string>
+    <string name="enter_the_amount">Syötä summa</string>
+    <string name="status">Tila</string>
+    <string name="pending">Odottaa</string>
+    <string name="no_requested_history">Ei pyyntöhistoriaa</string>
+    <string name="no_wallet_history">Ei lompakkohistoriaa</string>
+    <string name="confirm_new_password">Varmista uusi salasana</string>
+    <string name="otp">Varmistuskoodi</string>
+    <string name="account_verification_desc">Tilisi ei ole vielä varmennettu! Odota...</string>
+    <string name="banned_desc">Tilisi on lukittu. Ota yhteys tukeen.</string>
+    <string name="confirm_request_amt">Varmista pyynnön summa</string>
+    <string name="confirm">Hyväksy</string>
+    <string name="delete">Poista</string>
+    <string name="change_card">Kyllä</string>
+    <string name="card_added">Kortti lisätty</string>
+    <string name="please_enter_card_number">Anna korttinumero</string>
+    <string name="please_enter_card_cvv">Anna kortin CVV</string>
+    <string name="please_enter_card_expiration_details">Anna kortin voimassaolo</string>
+    <string name="card_">XXXX-XXXX-XXXX-</string>
+    <string name="add_card_details">Lisää kortti tiedot</string>
+    <string name="card_deleted_successfully">Kortti poistettu onnistuneesti.</string>
+    <string name="are_sure_you_want_to_delete">Haluatko varmasti poistaa?</string>
+    <string name="cant_able_to_delete_card">Ei voi poistaa korttia</string>
+    <string name="are_sure_you_want_to_change_default_card">Haluatko vaihtaa korttia?</string>
+    <string name="are_sure_you_want_to_change_language">Haluatko vaihtaa kieltä?</string>
+    <string name="proceed">Jatka</string>
+    <string name="Add">Lisää</string>
+    <string name="edit">Muokkaa</string>
+    <string name="no_document_available">Ei dokumentteja</string>
+    <string name="add_all_documents">Lisää kaikki dokumentit</string>
+    <string name="change_document">Muuta dokumenttia</string>
+    <string name="no_document_changed">Muuta dokumenttia ja jatka</string>
+    <string name="invalid_img_file">Valitse oikea tiedostomuoto</string>
+    <string name="server_down">Palvelimeen ei saada yhteyttä</string>
+    <string name="no_internet">Tarkasta internet-yhteytesi</string>
+    <string name="some_thing_wrong">Jokin meni pieleen!</string>
+    <string name="otp_verification">Koodivarmennus</string>
+
+    <string name="please_wait">Odota</string>
+    <string name="schedule_for">Aikatauluta</string>
+    <string name="please_try_again">Yritä uudelleen!</string>
+    <string name="logout_successfully">Kirjautuminen onnistui</string>
+    <string name="fran_ais" translatable="false">Français</string>
+    <string name="expireSession">Istunto vanhentui! Kirjaudu uudestaan.</string>
+    <string name="newVersionAvailable">Uusi versio saatavilla</string>
+    <string name="forceUpdateMsg">Päivitä sovellus jatkaaksesi.</string>
+    <string name="update">Päivitä</string>
+    <string name="noThanks">Ei kiitos.</string>
+    <string name="what_your_phonenumber">Mikä puhelinnumerosi?</string>
+    <string name="invalid_otp">Syötä varmistuskoodi</string>
+    <string name="wrong_otp">Koodi väärin</string>
+    <string name="finnish">Finnish</string>
+    <string name="payable">Payable</string>
+</resources>
+
+

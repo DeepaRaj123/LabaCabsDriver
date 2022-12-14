@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.laba.partner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:exported="true"
+        android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+        android:exported="true"
+        />
+
+    <permission
+        android:exported="true"
+        android:name="com.laba.user.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.laba.partner.MvpApplication"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+<!--        <activity android:name=".LocationPopUpActivitySample">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity
+            android:name="com.laba.partner.ui.activity.splash.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.laba.partner.ui.activity.welcome.WelcomeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.email.EmailActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.laba.partner.ui.activity.regsiter.RegisterActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.laba.partner.ui.activity.password.PasswordActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.laba.partner.ui.activity.sociallogin.SocialLoginActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.laba.partner.ui.activity.forgot_password.ForgotActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.reset_password.ResetActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.main.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.laba.partner.ui.activity.your_trips.YourTripActivity"
+            android:exported="false"
+            android:label="@string/your_trips"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.profile.ProfileActivity"
+            android:exported="false"
+            android:label="@string/profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.document.DocumentActivity"
+            android:exported="false"
+            android:label="@string/walletTransactions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.invite.InviteActivity"
+            android:exported="false"
+            android:label="@string/invite_refferal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.change_password.ChangePasswordActivtiy"
+            android:exported="false"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.upcoming_detail.UpcomingTripDetailActivity"
+            android:exported="false"
+            android:label="@string/upcoming_trip_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.past_detail.PastTripDetailActivity"
+            android:exported="false"
+            android:label="@string/past_trip_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.earnings.EarningsActivity"
+            android:exported="false"
+            android:label="@string/earnings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.request_money.RequestMoneyActivity"
+            android:exported="false"
+            android:label="@string/transaction"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.wallet.WalletActivity"
+            android:exported="false"
+            android:label="@string/wallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.laba.partner.ui.activity.summary.SummaryActivity"
+            android:exported="false"
+            android:label="@string/summary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.help.HelpActivity"
+            android:exported="false"
+            android:label="@string/help"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity-->
+        <!--android:name="com.theartofdev.edmodo.cropper.CropImageActivity"-->
+        <!--android:theme="@style/Base.Theme.AppCompat" />-->
+
+        <!--<meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_ViPrAf8K9Beh0Q" />-->
+
+        <!--        <meta-data-->
+        <!--            android:name="com.razorpay.ApiKey"-->
+        <!--            android:value="hikzhfA8i8Tr80OgnWJGXVrd" />-->
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_HEclv53o7Kz8PI" />
+
+        <!--<meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_push" />-->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/noti_icon_new" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name="com.laba.partner.common.fcm.MyFireBaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service
+            android:name="com.laba.partner.common.fcm.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <service
+            android:name="com.laba.partner.common.fcm.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <!-- Floating Dock -->
+        <service
+            android:name="com.laba.partner.common.FloatWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.laba.partner.common.chat.ChatActivity"
+            android:exported="false"
+            android:label="@string/chat"
+            android:parentActivityName="com.laba.partner.ui.activity.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.laba.partner.common.GPSTracker"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3aef7a5b05836cf8166f23c95e43c52517bee917" />
+
+        <service
+            android:name=".service.FetchLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+
+        <activity
+            android:name="com.laba.partner.ui.activity.setting.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.laba.partner.ui.activity.card.CardActivity"
+            android:exported="false"
+            android:label="@string/card"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.laba.partner.ui.activity.otp.OTPActivity"
+            android:exported="false"
+            android:label="@string/otp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.laba.partner.ui.activity.add_card.AddCardActivity"
+            android:exported="false"
+            android:label="@string/add_card_for_payments"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.laba.partner.service.LocationShareService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.laba.partner.service.CheckScheduleService"
+            android:exported="false"
+            android:label="CheckLocationForegroundRunning"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:exported="true"
+            android:name=".service.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!--<service
+            android:name="com.laba.partner.common.ChatHeadService"
+            android:exported="false" />-->
+    </application>
+
+</manifest>

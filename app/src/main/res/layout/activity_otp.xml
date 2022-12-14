@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.otp.OTPActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="@font/sfui_semibold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/what_your_phonenumber"
+            android:textColor="@color/colorPrimaryText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfui_semibold"
+                android:text="@string/phone_number"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/shadow_view">
+
+                <ImageView
+                    android:id="@+id/countryImage"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/flag_in" />
+
+                <TextView
+                    android:id="@+id/countryNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/countryImage"
+                    android:gravity="center"
+                    android:text="+91"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/countryNumber"
+                    android:hint="@string/phone_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/otp_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/colorSecondaryText" />
+
+
+        <me.philio.pinentry.PinEntryView
+            android:id="@+id/pin_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:accentType="none"
+            app:digitBackground="@android:color/white"
+            app:digitElevation="1dp"
+            app:digitTextColor="@color/black"
+            app:digitTextSize="15sp"
+            app:mask=""
+            app:numDigits="4"
+            app:pinInputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:text="Resend OTP"
+                android:textColor="@color/colorPrimaryText" />
+
+            <TextView
+                android:id="@+id/voice_call_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:text="Call for OTP"
+                android:textColor="@color/colorPrimaryText"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
